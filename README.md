@@ -39,3 +39,7 @@ Simply initialize the plugin on the menu's parent:
 ```javascript
 $('#main-menu').naavy();
 ```
+
+## Support
+
+Supports all modern desktop browsers, iPhone and Android browsers, and Internet Explorer 9+.
