@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>VitalNav Demo</title>
+    <link rel="stylesheet" href="vital-nav.css">
+    <style>
+        * { margin: 0; padding: 0; }
+    </style>
+</head>
+<body>
+
+    <nav id="test-menu">
+        <ul class="menu">
+            <li><a href="#top-level-1">Top Level 1</a></li>
+            <li><a href="#top-level-2">Top Level 2</a>
+                <ul>
+                    <li><a href="#secondary-1">Secondary 1</a></li>
+                    <li><a href="#secondary-2">Secondary 2</a>
+                        <ul>
+                            <li><a href="#tertiary-1">Tertiary 1</a></li>
+                            <li><a href="#tertiary-2">Tertiary 2</a>
+                                <ul>
+                                    <li><a href="#quaternary-1">Quaternary 1</a></li>
+                                    <li><a href="#quaternary-2">Quaternary 2</a></li>
+                                    <li><a href="#quaternary-3">Quaternary 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#tertiary-3">Tertiary 3</a>
+                        </ul>
+                    </li>
+                    <li><a href="#secondary-3">Secondary 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#top-level-3">Top Level 3</a></li>
+        </ul>
+    </nav>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="jquery.vitalnav.js"></script>
+
+    <script>
+        $('#test-menu').vitalNav();
+    </script>
+
+</body>
+</html>
