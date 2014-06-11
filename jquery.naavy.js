@@ -1,5 +1,5 @@
 /**
- * VitalNav Responsive Navigation
+ * Naavy
  * (c) 2014 Vital Design
  * Licensed under MIT
  */
@@ -10,33 +10,33 @@
         return (('ontouchstart' in window) || (navigator.MaxTouchPoints > 0)|| (navigator.msMaxTouchPoints > 0));
     }
 
-    $.fn.vitalNav = function() {
+    $.fn.naavy = function() {
 
         var menu      = this.find('ul').filter(':first'),
             menuItems = menu.find('li'),
             parents   = menuItems.has('ul'),
             subMenus  = parents.find('ul');
 
-            this.addClass('vnav-nav')
-                .prepend('<a id="vnav-menu-toggle" href="#"><span class="vnav-icon vnav-icon-menu"></span>Menu</a>');
+            this.addClass('naavy-nav')
+                .prepend('<a id="naavy-menu-toggle" href="#"><span class="naavy-icon naavy-icon-menu"></span>Menu</a>');
 
-            menu.addClass('vnav-menu');
-            subMenus.addClass('vnav-submenu');
-            parents.addClass('vnav-parent')
-                   .append('<span class="vnav-sub-toggle"><span class="vnav-icon vnav-icon-arrow"></span></span>');
+            menu.addClass('naavy-menu');
+            subMenus.addClass('naavy-submenu');
+            parents.addClass('naavy-parent')
+                   .append('<span class="naavy-sub-toggle"><span class="naavy-icon naavy-icon-arrow"></span></span>');
 
             if ( supports_touch() ) {
-                this.addClass('vnav-touch');
+                this.addClass('naavy-touch');
             } else {
-                this.addClass('vnav-notouch');
+                this.addClass('naavy-notouch');
             }
 
-            menu.on('click', '.vnav-sub-toggle', function(){
+            menu.on('click', '.naavy-sub-toggle', function(){
 
                 var subParent = $(this).closest('li'),
-                    subMenu = $(this).siblings('.vnav-submenu'),
-                    lowerParents = $(this).closest('li').find('.vnav-parent'),
-                    lowerSubMenus = $(this).closest('li').find('.vnav-submenu');
+                    subMenu = $(this).siblings('.naavy-submenu'),
+                    lowerParents = $(this).closest('li').find('.naavy-parent'),
+                    lowerSubMenus = $(this).closest('li').find('.naavy-submenu');
 
                 if ( subMenu.is(':hidden') ) {
                     subParent.addClass('active');
@@ -49,10 +49,10 @@
                 }
             });
 
-            $('#vnav-menu-toggle').click(function(event) {
+            $('#naavy-menu-toggle').click(function(event) {
                 event.preventDefault();
                 $(this).toggleClass('active');
-                $('.vnav-menu').slideToggle(100);
+                $('.naavy-menu').slideToggle(100);
             });
 
         return this;

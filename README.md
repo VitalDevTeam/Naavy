@@ -1,8 +1,8 @@
-# Vital Nav
+# Naavy
 
 A simple responsive nav solution. Detects touch support allowing you to serve up hover-based actions to mouse users and touch-based actions for finger users.
 
-**[Demo &rarr;](http://vitaldevteam.github.io/vital-nav/)**
+**[Demo &rarr;](http://vitaldevteam.github.io/naavy/)**
 
 ## Usage
 
@@ -37,5 +37,5 @@ The plugin assumes a standard HTML structure for a menu:
 Simply initialize the plugin on the menu's parent:
 
 ```javascript
-$('#main-menu').vitalNav();
+$('#main-menu').naavy();
 ```
