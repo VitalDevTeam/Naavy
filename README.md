@@ -2,6 +2,8 @@
 
 A simple responsive nav solution. Detects touch devices which allows you to serve up hover-based actions to mouse users and touch-based actions for finger users.
 
+**[Demo &rarr;](http://vitaldevteam.github.io/vital-nav/)**
+
 ## Usage
 
 The plugin assumes a standard HTML structure for a menu:
@@ -37,5 +39,3 @@ Simply initialize the plugin on the menu's parent:
 ```javascript
 $('#main-menu').vitalNav();
 ```
-
-## [Demo &rarr;](http://vitaldevteam.github.io/vital-nav/)
