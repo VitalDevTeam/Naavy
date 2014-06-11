@@ -9,7 +9,7 @@ The plugin assumes a standard HTML structure for a menu:
 ```html
 <nav id="main-menu">
     <ul>
-        <li><a href="#top-level-2">Top Level</a>
+        <li><a href="#">Top Level</a>
             <ul>
                 <li><a href="#">Secondary 1</a></li>
                 <li><a href="#">Secondary 2</a>
