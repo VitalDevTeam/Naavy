@@ -96,9 +96,6 @@
     text-align: center;
     cursor: pointer;
 }
-.vnav-notouch .vnav-sub-toggle {
-    display: none;
-}
 .vnav-sub-toggle .vnav-icon {
     display: block;
     font-size: 1.6em;
@@ -119,6 +116,9 @@
 @media only screen and (min-width: 30em) {
 
     #vnav-menu-toggle {
+        display: none;
+    }
+    .vnav-notouch .vnav-sub-toggle {
         display: none;
     }
     .vnav-menu {
