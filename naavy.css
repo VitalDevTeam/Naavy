@@ -72,7 +72,7 @@
 .naavy-submenu {
     display: none;
 }
-#naavy-menu-toggle {
+.naavy-menu-toggle {
     position: absolute;
     top: 0;
     right: 0;
@@ -81,7 +81,7 @@
     background: #222;
     color: #fff;
 }
-#naavy-menu-toggle .naavy-icon {
+.naavy-menu-toggle .naavy-icon {
     vertical-align: middle;
     font-size: 1.8em;
 }
@@ -115,7 +115,7 @@
 
 @media only screen and (min-width: 30em) {
 
-    #naavy-menu-toggle {
+    .naavy-menu-toggle {
         display: none;
     }
     .naavy-notouch .naavy-sub-toggle {
