@@ -18,7 +18,7 @@
             subMenus  = parents.find('ul');
 
             this.addClass('naavy-nav')
-                .prepend('<a id="naavy-menu-toggle" href="#"><span class="naavy-icon naavy-icon-menu"></span>Menu</a>');
+                .prepend('<a id="naavy-menu-toggle" class="naavy-menu-toggle" href="#"><span class="naavy-icon naavy-icon-menu"></span>Menu</a>');
 
             menu.addClass('naavy-menu');
             subMenus.addClass('naavy-submenu');
